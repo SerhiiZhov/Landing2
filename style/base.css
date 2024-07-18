@@ -1,0 +1,81 @@
+:root {
+    --colo-w: #fff;
+    --colo-g: #999;
+    --colo-dg:#3C4858;
+}
+
+body {
+    color: var(--colo-g);
+    background-color: var(--colo-w);
+    font-family: roboto, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.container.container--width_2 {
+    max-width: 850px;
+}
+
+
+.section {
+    width: 100%;
+    padding: 100px 0;
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+   
+    
+    .section {
+        width: 100%;
+        padding: 60px 0;
+    }  
+
+}
+
+@media screen and (max-width:767.5px)  {
+
+    .section {
+        width: 100%;
+        padding: 40px 0;
+    }  
+
+}
+
+@media screen and (max-width:468px)  {
+
+    .section {
+        width: 100%;
+        padding: 20px 0;
+    }  
+
+    .container {
+        max-width: 1120px;
+        width: 100%;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.wow {
+    overflow: hidden;
+}
